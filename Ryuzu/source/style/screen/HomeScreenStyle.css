@@ -1,0 +1,66 @@
+div.heroText {
+    width: calc(1088 * var(--unit));
+    height: calc(192 * var(--unit));
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font: 700 calc(64 * var(--unit)) 'Inter';
+    margin: calc(176 * var(--unit)) auto 0 auto;
+    color: var(--mono800);
+}
+
+div.subHeroText {
+    width: calc(480 * var(--unit));
+    height: calc(48 * var(--unit));
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font: 400 calc(20 * var(--unit)) 'Inter';
+    margin: calc(16 * var(--unit)) auto 0 auto;
+    color: var(--mono500);
+}
+
+div.iconButtonContainer {
+    width: calc(736 * var(--unit));
+    height: calc(128 * var(--unit));
+    margin: calc(64 * var(--unit)) auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.iconButtonContainer a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.iconButtonContainer a:hover {
+
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+div.iconButtonContainer a:hover div.iconButton-icon {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+div.iconButton-icon {
+    width: calc(80 * var(--unit));
+    height: calc(80 * var(--unit));
+    background: var(--accentVariant);
+    color: var(--mono100);
+    display: grid;
+    place-items: center;
+    border-radius: calc(40 * var(--unit));
+    font-size: calc(32 * var(--unit));
+}
+
+div.iconButton-title {
+    width: calc(80 * var(--unit));
+    height: calc(32 * var(--unit));
+    display: grid;
+    place-items: center;
+    font: 400 calc(14 * var(--unit)) 'Inter';
+    margin: calc(16 * var(--unit)) 0 0 0;
+    color: var(--mono800);
+}
+
