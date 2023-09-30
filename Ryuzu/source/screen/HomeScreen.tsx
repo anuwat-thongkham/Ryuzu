@@ -31,6 +31,44 @@ export default function Home() {
                     <div className='iconButton-title'>Catalog</div>
                 </Link>
             </div>
+            <div className="card-header">Explain</div>
+            <ul className="section-3">
+                <li className='section-3-1'>
+                    <p className="section-3-subheader">แนะนำ</p>
+                    <p className='section-3-header'>วิธีการสร้างบัญชี</p>
+                    <p className="section-3-explain">แนะนำวิธีการสร้างบัญชีเพื่อเริ่มต้นใช้งานครั้งแรกโดยง่าย</p>
+                    <hr />
+                    <p className="section-3-detial-title">ดูรายละเอียด</p>
+                    <Link to='/' className='material-symbols-rounded'>arrow_forward</Link>
+                </li>
+                <li className='section-3-2'>
+
+                    <p className="section-3-subheader">แนะนำ</p>
+                    <p className='section-3-header'>วิธีการสั่งซื้อสินค้า</p>
+                    <p className="section-3-explain">แนะนำวิธีการสั่งซื้อสินค้า การเลือกวิธีชำระเงิน การเลือกที่อยู่อยู่ในการจัดส่ง</p>
+                    <hr />
+                    <p className="section-3-detial-title">ดูรายละเอียด</p>
+                    <Link to='/' className='material-symbols-rounded'>arrow_forward</Link>
+                </li>
+                <li className='section-3-3'>
+
+                    <p className="section-3-subheader">แนะนำ</p>
+                    <p className='section-3-header'>วิธีการคืนสินค้า</p>
+                    <p className="section-3-explain">แนะนำวิธีการคืนสินค้า นโยบายในการคืนสินค้า รวมทั้งการยกเลิกการสั่งสินค้า</p>
+                    <hr />
+                    <p className="section-3-detial-title">ดูรายละเอียด</p>
+                    <Link to='/' className='material-symbols-rounded'>arrow_forward</Link>
+                </li>
+                <li className='section-3-4'>
+
+                    <p className="section-3-subheader">แนะนำ</p>
+                    <p className='section-3-header'>แนะนำทีมงาน</p>
+                    <p className="section-3-explain">แนะนำทีมงานที่สร้างโปรเจ็คนี้ขึ้นมา และที่มา จุดประสงค์ และประโยชน์</p>
+                    <hr />
+                    <p className="section-3-detial-title">ดูรายละเอียด</p>
+                    <Link to='/About' className='material-symbols-rounded'>arrow_forward</Link>
+                </li>
+            </ul>
         </div>
     )
 }
