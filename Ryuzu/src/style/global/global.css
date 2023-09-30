@@ -10,14 +10,32 @@
 }
 
 :root {
-    --primary:;
-    --seconday:;
-    --secondaryVariant:;
-    --accent:;
-    --accentVariant:;
+    --primary:#FF5C5C;
+    --seconday:#FFB05C;
+    --secondaryVariant:#FFC65C;
+    --accent:#5C8DFF;
+    --accentVariant:#5CC3FF;
 
-    --big: (1vh / 8.1);
-    --medium: (1vw / 14.4);
-    --small: (1vw / 3.75)
+    --warning:#FFC216;
+    --alert:#FF0000;
+    --mono100:#FFFFFF;
+    --mono200:#FAFAFA;
+    --mono300:#E8E8E9;
+    --mono400:#BBBBBC;
+    --mono500:#8E8E8F;
+    --mono600:#606062;
+    --mono700:#333335;
+    --mono800:#1C1C1E;
+    --mono900:#000000;
 }
 
+@media (min-aspect-ratio: 16/9)  {
+    :root{
+        --unit:(1vh / 8.1);
+    }
+}
+@media (max-aspect-ratio: 16/9)  {
+    :root{
+        --unit:(1vw / 14.4);
+    }
+}
