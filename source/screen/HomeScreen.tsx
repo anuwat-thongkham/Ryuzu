@@ -1,9 +1,13 @@
 
-/* Import Styles */
 import { Link } from 'react-router-dom'
+
+/* Import Styles */
 import '../style/global/global.css'
 import '../style/screen/HomeScreenStyle.css'
 
+
+/* Import Components */
+import Footer from '../component/Footer'
 export default function Home() {
     return (
         <div className="homeContainer">
@@ -51,7 +55,6 @@ export default function Home() {
                     <Link to='/' className='material-symbols-rounded'>arrow_forward</Link>
                 </li>
                 <li className='section-3-3'>
-
                     <p className="section-3-subheader">แนะนำ</p>
                     <p className='section-3-header'>วิธีการคืนสินค้า</p>
                     <p className="section-3-explain">แนะนำวิธีการคืนสินค้า นโยบายในการคืนสินค้า รวมทั้งการยกเลิกการสั่งสินค้า</p>
@@ -69,6 +72,7 @@ export default function Home() {
                     <Link to='/About' className='material-symbols-rounded'>arrow_forward</Link>
                 </li>
             </ul>
+            <Footer></Footer>
         </div>
     )
 }

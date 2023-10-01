@@ -1,0 +1,54 @@
+div.footerContainer {
+    width: 100%;
+    height: calc(208 * var(--unit));
+    background: var(--mono200);
+    display: flex;
+}
+
+div.footerWrapper {
+    width: calc(1312 * var(--unit));
+    height: calc(208 * var(--unit));
+    margin: 0 auto;
+}
+
+a.footer-logo {
+    width: calc(128 * var(--unit));
+    height: calc(32 * var(--unit));
+    display: block;
+    background: url(../../asset/image/logo-black.png) no-repeat center;
+    background-size: cover;
+    margin: calc(32 * var(--unit)) 0 0 0;
+
+}
+
+div.linkContainer {
+    width: calc(1312 * var(--unit));
+    height: calc(80 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+    display: flex;
+    gap: calc(32 * var(--unit));
+}
+
+div.linkContainer a {
+    width: auto;
+    height: calc(80 * var(--unit));
+    display: flex;
+    align-items: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+    text-decoration: none;
+}
+
+div.linkContainer a:hover {
+    text-decoration: underline;
+    color: var(--mono900);
+}
+
+div.copyright-container {
+    width: calc(1312 * var(--unit));
+    height: calc(48 * var(--unit));
+    border-top: 1px solid var(--mono800);
+    display: flex;
+    align-items: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+}
