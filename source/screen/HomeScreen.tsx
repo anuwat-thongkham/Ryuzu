@@ -9,6 +9,7 @@ import '../style/screen/HomeScreenStyle.css'
 import Footer from '../component/Footer'
 import HomeSuggestMenu from '../component/HomeSuggestMenu'
 import HomeIconButton from '../component/HomeIconButton'
+
 export default function Home() {
     return (
         <div className='homeScreenContainer'>
