@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 /* Import Styles */
 import '../style/global/global.css'
-import '../style/component/footerStyle.css'
+import '../style/component/FooterStyle.css'
+
 export default function Footer() {
 
     return (

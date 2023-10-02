@@ -1,0 +1,105 @@
+div.suggestMenuContainer {
+    width: calc(1312 * var(--unit));
+    height: calc(304 * var(--unit));
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: calc(16 * var(--unit)) auto 0 auto;
+}
+
+div.suggestMenu {
+    width: calc(304 * var(--unit));
+    height: calc(304 * var(--unit));
+    border-radius: calc(32 * var(--unit));
+    padding: 0 calc(32 * var(--unit));
+}
+
+div.suggestMenu:hover {
+    transition: 0.3s;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+div.suggestMenuHook {
+    width: calc(240 * var(--unit));
+    height: calc(16 * var(--unit));
+    margin: calc(32 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 500 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono100);
+}
+
+div.suggestMenuTitle {
+    width: calc(240 * var(--unit));
+    height: calc(48 * var(--unit));
+    display: flex;
+    align-items: center;
+    font: 600 calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+}
+
+div.suggestMenuContent {
+    width: calc(240 * var(--unit));
+    height: calc(96 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+    font: 500 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+    border-bottom: 1px dashed var(--mono100);
+
+}
+
+div.suggestMenuDetail {
+    width: calc(160 * var(--unit));
+    height: calc(56 * var(--unit));
+    font: 600 calc(16 * var(--unit)) 'IBM Plex Sans Thai';
+    margin: calc(24 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    color: var(--mono800);
+}
+
+a.suggestMenuButton {
+    width: calc(40 * var(--unit));
+    height: calc(40 * var(--unit));
+    font-size: calc(24 * var(--unit));
+    margin: calc(-48 * var(--unit)) 0 0 auto;
+    display: grid;
+    place-content: center;
+    color: var(--mono100);
+    text-decoration: none;
+    border-radius: calc(8 * var(--unit));
+    position: static;
+}
+
+div.suggestMenu-1 {
+    background: var(--accentVariant);
+}
+
+div.suggestMenu-2 {
+    background: var(--primary);
+}
+
+div.suggestMenu-3 {
+    background: var(--secondary);
+}
+
+div.suggestMenu-4 {
+    background: var(--accent);
+}
+
+a.suggestMenuButton-1 {
+    background: var(--accent);
+}
+
+a.suggestMenuButton-2 {
+    background: var(--secondaryVariant);
+}
+
+a.suggestMenuButton-3 {
+    background: var(--primary);
+}
+
+a.suggestMenuButton-4 {
+    background: var(--accentVariant);
+}
