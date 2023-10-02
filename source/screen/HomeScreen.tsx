@@ -1,5 +1,4 @@
 
-import { Link } from 'react-router-dom'
 
 /* Import Styles */
 import '../style/global/global.css'
@@ -12,7 +11,7 @@ import HomeSuggestMenu from '../component/HomeSuggestMenu'
 import HomeIconButton from '../component/HomeIconButton'
 export default function Home() {
     return (
-        <div className='homeContainer'>
+        <div className='homeScreenContainer'>
             <div className='heroText'>Pre-Order Imported<br />Product, Easy to Buys</div>
             <div className='subHeroText'>🔍 Let’s explore your best items</div>
             <HomeIconButton></HomeIconButton>
