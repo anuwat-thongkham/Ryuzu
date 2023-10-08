@@ -1,0 +1,74 @@
+div.cover-success div.success-container {
+    width: calc(384 * var(--unit));
+    height: calc(448 * var(--unit));
+    background: var(--mono100);
+    border-radius: calc(32 * var(--unit));
+    padding: calc(16 * var(--unit));
+}
+
+div.cover-success img {
+    width: calc(160 * var(--unit));
+    height: calc(144 * var(--unit));
+    object-fit: cover;
+    margin: calc(32 * var(--unit)) 0 0 calc(96 * var(--unit));
+
+}
+
+div.cover-success p {
+    width: calc(352 * var(--unit));
+    height: calc(32 * var(--unit));
+    font: bold calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: calc(48 * var(--unit)) 0 0 0;
+}
+
+div.cover-success {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(16px);
+    background-color: rgba(160, 160, 160, 0.1);
+    display: grid;
+    place-content: center;
+}
+
+div.cover-success a:first-of-type {
+    width: calc(352 * var(--unit));
+    height: calc(48 * var(--unit));
+    display: grid;
+    place-content: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    border: 1px solid var(--mono600);
+    color: var(--mono600);
+    background:var(--mono100);
+    outline: 0;
+    border-radius: calc(16 * var(--unit));
+    cursor: pointer;
+    margin: calc(44 * var(--unit)) 0 0 0;
+    text-decoration: none;
+}
+
+div.cover-success a:last-of-type {
+    width: calc(352 * var(--unit));
+    height: calc(48 * var(--unit));
+    display: grid;
+    place-content: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    border: 0;
+    background: var(--mono800);
+    color: var(--mono100);
+    outline: 0;
+    border-radius: calc(16 * var(--unit));
+    cursor: pointer;
+    margin: calc(16 * var(--unit)) 0 0 0;
+    text-decoration: none;
+}
+
+div.cover-success a:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
