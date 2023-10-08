@@ -9,7 +9,7 @@ export default function LoginScreen() {
 
     return (
         <div className='loginScreenContainer'>
-            <button className='buttonBack material-symbols-rounded'></button>
+            <Link to='/' className='buttonBack material-symbols-rounded'>arrow_back</Link>
             <div className='contentContainer'>
                 <form action='' className='loginFormContainer'>
                     <div className='loginFormHeader'>เข้าสู่ระบบ 🎉</div>

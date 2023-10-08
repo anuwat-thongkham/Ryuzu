@@ -112,3 +112,16 @@ button.submitButton {
 button.submitButton:hover {
     background: var(--mono900);
 }
+
+a.buttonBack {
+    width: calc(32 * var(--unit));
+    height: calc(32 * var(--unit));
+    position: absolute;
+    margin: calc(32 * var(--unit)) 0 0 calc(32 * var(--unit));
+    background: transparent;
+    border: 0;
+    font-size: calc(32 * var(--unit));
+    color: var(--mono100);
+    outline: 0;
+    text-decoration: none;
+}
