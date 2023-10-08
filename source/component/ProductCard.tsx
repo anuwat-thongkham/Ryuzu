@@ -19,7 +19,7 @@ const ProductCard: React.FC<productCardProps> = ({ id, isWish, name, price, star
     return (
         <div className="productCardContainer">
             <div className="wishButton">
-                <span className="material-symbols-rounded material-symbols-rounded-fill">heart</span>
+                <span className="wishButtonIcon material-symbols-rounded material-symbols-rounded-not-fill">favorite</span>
             </div>
             <img src={testImage} alt="ProductImage" className="productImage" />
             <div className="productCardName">{productName}</div>
