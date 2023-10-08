@@ -1,10 +1,14 @@
 div.productCardContainer {
     width: calc(255.33 * var(--unit));
     height: calc(256 * var(--unit));
+    border-radius: calc(24 * var(--unit));
     background-color: green;
 }
 
-img.productImage {}
+img.productImage {
+    width: calc(189.33 * var(--unit));
+    height: calc(142 * var(--unit));
+}
 
 div.productCardName {}
 

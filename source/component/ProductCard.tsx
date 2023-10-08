@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 import '../style/component/ProductCardStyle.css'
+
+import testImage from '../asset/image/vector.png'
+
 interface productCardProps {
     id: string;
     isWish: boolean;
@@ -15,7 +18,7 @@ const ProductCard: React.FC<productCardProps> = ({ id, isWish, name, price, star
     const [productStar, setProductStar] = useState<string>('5.0');
     return (
         <div className="productCardContainer">
-            <img src="" alt="ProductImage" className="productImage" />
+            <img src={testImage} alt="ProductImage" className="productImage" />
             <div className="productCardName">{productName}</div>
             <div className="productCardStarContainer">
                 <span className="productCardStarSymbol material-symbols-rounded material-symbols-rounded-fill "></span>
