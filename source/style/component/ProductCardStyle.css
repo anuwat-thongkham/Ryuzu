@@ -11,7 +11,7 @@ img.productImage {
     height: calc(142 * var(--unit));
     margin: calc(8 * var(--unit)) 0 0 calc(8 * var(--unit));
     border-radius: calc(16 * var(--unit));
-
+    object-fit: cover;
 }
 
 div.productCardName {
@@ -70,6 +70,7 @@ div.wishButton{
 span.wishButtonIcon{
     font-size: calc(20 * var(--unit));
     color: var(--mono800);
+    cursor: pointer;
 }
 div.productCardPrice {
     width: calc(132 * var(--unit));
@@ -81,4 +82,7 @@ div.productCardPrice {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+span.likeFill{
+    color: var(--primary);
 }
