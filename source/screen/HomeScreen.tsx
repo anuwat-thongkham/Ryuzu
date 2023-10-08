@@ -26,6 +26,12 @@ export default function Home() {
                 <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
                 <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
                 <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
             </div>
             <Footer></Footer>
         </div>

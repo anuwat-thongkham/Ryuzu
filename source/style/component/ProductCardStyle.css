@@ -1,21 +1,84 @@
 div.productCardContainer {
-    width: calc(255.33 * var(--unit));
+    width: calc(205.33 * var(--unit));
     height: calc(256 * var(--unit));
     border-radius: calc(24 * var(--unit));
-    background-color: green;
+    background: var(--mono100);
+    border: 1px solid var(--mono200);
 }
 
 img.productImage {
     width: calc(189.33 * var(--unit));
     height: calc(142 * var(--unit));
+    margin: calc(8 * var(--unit)) 0 0 calc(8 * var(--unit));
+    border-radius: calc(16 * var(--unit));
+
 }
 
-div.productCardName {}
+div.productCardName {
+    width: calc(189.33 * var(--unit));
+    height: calc(40 * var(--unit));
+    margin: calc(2 * var(--unit)) 0 0 calc(8 * var(--unit));
+    /* background: var(--mono200); */
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+    -webkit-line-clamp: 2; 
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+}
 
-div.productCardStarContainer {}
+div.productCardStarContainer {
+    width: calc(53.33 * var(--unit));
+    height: calc(24 * var(--unit));
+    margin: calc(26 * var(--unit)) 0 0 calc(8 * var(--unit));
+    border-radius: calc(12 * var(--unit));
+    background: var(--secondaryVariant);
+    display: flex;
+}
 
-span.productCardStarSymbol {}
+span.productCardStarSymbol {
 
-div.productCardStar {}
+    width: calc(24* var(--unit));
+    height: calc(24 * var(--unit));
+    margin: calc(-1* var(--unit)) 0 0 0;
+    font-size: calc(24 * var(--unit));
+    color: var(--mono100);
+}
 
-div.productCardPrice {}
+div.productCardStar {
+    width: calc(29 * var(--unit));
+    height: calc(24 * var(--unit));
+    /* background: var(--mono200); */
+    font: 600 calc(12 * var(--unit)) 'Inter';
+    color: var(--mono100);
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+div.wishButton{
+    width: calc(28 * var(--unit));
+    height: calc(28 * var(--unit));
+    margin: calc(12 * var(--unit)) 0 0 calc(164.33 * var(--unit));
+    border-radius: calc(14 * var(--unit));
+    position: absolute;
+    background: var(--mono100);
+    display: grid;
+    place-items: center;
+
+}
+span.wishButtonIcon{
+    font-size: calc(20 * var(--unit));
+    color: var(--mono800);
+}
+div.productCardPrice {
+    width: calc(132 * var(--unit));
+    height: calc(24 * var(--unit));
+    position: absolute;
+    margin: calc(-24 * var(--unit)) 0 0 calc(53.33 * var(--unit));
+    font: 600 calc(14 * var(--unit)) 'Inter';
+    color: var(--mono800);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
