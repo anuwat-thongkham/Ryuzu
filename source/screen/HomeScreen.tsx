@@ -18,10 +18,15 @@ export default function Home() {
             <div className='subHeroText'>🔍 Let’s explore your best items</div>
             <HomeIconButton></HomeIconButton>
             <div className='card-header'>Explain</div>
+            <HomeSuggestMenu></HomeSuggestMenu>
             <div className="productContainer">
                 <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
+                <ProductCard id={''} isWish={false} name={''} price={0} discount={0} star={0}></ProductCard>
             </div>
-            <HomeSuggestMenu></HomeSuggestMenu>
             <Footer></Footer>
         </div>
     )

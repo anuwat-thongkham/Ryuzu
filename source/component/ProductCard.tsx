@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-
+import '../style/component/ProductCardStyle.css'
 interface productCardProps {
     id: string;
     isWish: boolean;

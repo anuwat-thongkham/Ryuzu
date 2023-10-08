@@ -35,3 +35,12 @@ div.card-header {
     margin: calc(64 * var(--unit)) auto 0 auto;
     color: var(--mono800);
 }
+
+div.productContainer{
+    width: calc(1312 * var(--unit));
+    height: auto;
+    margin: calc(64 * var(--unit)) auto;
+    display: flex;
+    justify-content: space-between;
+    gap: calc(16 * var(--unit));
+}

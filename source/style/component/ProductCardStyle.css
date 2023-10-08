@@ -1,0 +1,17 @@
+div.productCardContainer {
+    width: calc(255.33 * var(--unit));
+    height: calc(256 * var(--unit));
+    background-color: green;
+}
+
+img.productImage {}
+
+div.productCardName {}
+
+div.productCardStarContainer {}
+
+span.productCardStarSymbol {}
+
+div.productCardStar {}
+
+div.productCardPrice {}
