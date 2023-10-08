@@ -31,6 +31,7 @@ export default function LoginScreen() {
                 console.log('Login Success:', data);
                 alert('เข้าสู่ระบบสำเร็จ');
                 localStorage.setItem('token', data.token);
+            
                 // Handle successful login - you may want to store the user data or token
             } else {
                 const errorData = await response.json();

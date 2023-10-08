@@ -1,0 +1,57 @@
+div.navbarContainer {
+    width: 100%;
+    height: calc(56 * var(--unit));
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    /* background: red; */
+    background: var(--mono100);
+    border-bottom: 1px solid var(--mono200);
+}
+
+div.navbarWrapper {
+    width: calc(1312 * var(--unit));
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    /* background: green; */
+}
+
+div.navbarLogo {
+
+    width: calc(96 * var(--unit));
+    height: calc(24 * var(--unit));
+    background: url('../../asset/image/logo-black.png') no-repeat center;
+    background-size: cover;
+    margin: auto auto auto 0;
+}
+
+button.navbarUser {
+    width: calc(96 * var(--unit));
+    height: calc(32 * var(--unit));
+    border-radius: calc(16 * var(--unit));
+    border: 1px solid var(--mono800);
+    background: var(--mono100);
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+    cursor: pointer;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+button.navbarSearch {
+    width: calc(24 * var(--unit));
+    height: calc(24 * var(--unit));
+    display: grid;
+    place-content: center;
+    color: var(--mono800);
+    font-size: calc(24 * var(--unit));
+    background: none;
+    outline: 0;
+    border: 0;
+    margin: auto calc(32 * var(--unit)) auto 0;
+    cursor: pointer;
+}
