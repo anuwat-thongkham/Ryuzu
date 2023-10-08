@@ -7,7 +7,7 @@ interface productCardProps{
     price:number;
     star:number;
 }
-const ProductCard: React.FC<productCardProps> = ({ productList }) =>{
+const ProductCard: React.FC<productCardProps> = ({ id, isWish, name, price, star }) =>{
     return(
         <div className="productCardContainer">
             <img src="" alt="ProductImage" className="productImage" />
