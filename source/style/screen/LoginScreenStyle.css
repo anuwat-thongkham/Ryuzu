@@ -1,0 +1,24 @@
+div.loginScreenContainer {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(var(--primary), var(--secondary));
+}
+
+div.contentContainer {}
+
+form.loginFormContainer {}
+
+div.loginFormHeader {}
+
+div.loginFromDescription {}
+
+div.inputContainer {}
+
+div.warningMessageContainer {}
+
+div.submitButtonContainer {}
+
+div.suggestTextContainer {}
+
+div.suggestTextContainer a {}
