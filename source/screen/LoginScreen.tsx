@@ -2,19 +2,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../component/Footer';
 import '../style/screen/LoginScreenStyle.css';
-import { Alert } from 'react-native';
-
+const apiUrl = "http://localhost:3000";
 export default function LoginScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [warningMessage, setWarningMessage] = useState<string>('');
 
     const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('handleLogin function called');
+        e.preventDefault();
+        console.log('handleLogin function called');
 
         try {
-            const response = await fetch('/login', {
+            const response = await fetch(`${apiUrl}/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -30,8 +29,8 @@ export default function LoginScreen() {
             if (response.ok) {
                 const data = await response.json();
                 console.log('Login Success:', data);
-                localStorage.setItem('token', data.id);
-                Alert.alert('ล็อกอินสำเร็จ');
+                alert('เข้าสู่ระบบสำเร็จ');
+                localStorage.setItem('token', data.token);
                 // Handle successful login - you may want to store the user data or token
             } else {
                 const errorData = await response.json();
@@ -39,7 +38,8 @@ export default function LoginScreen() {
                 setWarningMessage(errorData.message);
             }
         } catch (error) {
-            console.error('Error logging in:', error);
+            console.log('Error logging in:');
+            alert('เข้าสู่ระบบไม่สำเร็จ');
         }
     };
 

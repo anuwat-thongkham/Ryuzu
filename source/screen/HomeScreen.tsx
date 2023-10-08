@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-
+import AsyncStorage from '@react-native-async-storage/async-storage'; 
 /* Import Styles */
 import '../style/global/global.css'
 import '../style/screen/HomeScreenStyle.css'
@@ -31,7 +31,22 @@ export default function Home() {
         axios.get("http://localhost:3000/products").then((response) => {
             setProducts(response.data);
         });
+        getTokenAndAlert();
     }, []);
+
+    const getTokenAndAlert = async () => {
+        try {
+          const token = await AsyncStorage.getItem('token');
+          if (token) {
+            alert('This is token id');
+            alert(token);
+          } else {
+            alert('Token not found');
+          }
+        } catch (error) {
+          console.error('Error retrieving token:', error);
+        }
+      };
     return (
         <div className='homeScreenContainer'>
             <div className='heroText'>Pre-Order Imported<br />Product, Easy to Buys</div>
