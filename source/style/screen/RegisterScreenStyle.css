@@ -1,4 +1,4 @@
-div.registerContainer {
+div.registerScreenContainer {
     width: 100%;
     height: auto;
     min-height: 100vh;
@@ -22,20 +22,111 @@ div.heroContainer {
 div.formSection {
     width: 50vw;
     height: 100vh;
-}
-form.registerFormContainer{
-
-}
-div.registerFormLogo{
-
-}
-div.registerFormHeader{
-
-}
-div.registerFormDesription{
-
+    display: grid;
+    place-items: center;
 }
 
-div.registerInputContainer{
-    
+form.registerFormContainer {
+    width: calc(288 * var(--unit));
+    height: calc(496 * var(--unit));
+}
+
+div.registerFormLogo {
+    width: calc(160 * var(--unit));
+    height: calc(48 * var(--unit));
+    background: url('../../asset/image/logo-black.png') no-repeat;
+    background-size: cover;
+}
+
+div.registerFormHeader {
+    width: calc(288 * var(--unit));
+    height: calc(32 * var(--unit));
+    margin: calc(48 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 700 calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+}
+
+div.registerFormDesription {
+    width: calc(288 * var(--unit));
+    height: calc(32 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono600);
+}
+
+div.registerInputContainer {
+    width: calc(288 * var(--unit));
+    height: calc(40 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+}
+
+div.registerWarningMessage {
+    width: calc(288 * var(--unit));
+    height: calc(16 * var(--unit));
+    margin: calc(24 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--alert);
+}
+
+div.registerSubmitButtonContainer {
+    width: calc(288 * var(--unit));
+    height: calc(48 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+}
+
+div.registerSuggestTextContainer {
+    width: calc(288 * var(--unit));
+    height: calc(16 * var(--unit));
+    margin: calc(32 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+}
+
+div.registerSuggestTextContainer a {
+    font: 600 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    text-decoration: none;
+    color: var(--accent);
+}
+
+div.registerSuggestTextContainer a:hover {
+    text-decoration: underline;
+}
+
+input.registerInputField {
+    width: calc(288 * var(--unit));
+    height: calc(40 * var(--unit));
+    border-radius: calc(8 * var(--unit));
+    border: 0;
+    background: var(--mono200);
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    padding: 0 calc(16 * var(--unit));
+}
+
+input.registerInputField:hover,
+input.registerInputField:focus {
+    outline: 3px solid var(--accentVariant);
+}
+
+button.registerSubmitButton {
+    width: calc(288 * var(--unit));
+    height: calc(48 * var(--unit));
+    border-radius: calc(16 * var(--unit));
+    border: 0;
+    background: var(--mono800);
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono100);
+    cursor: pointer;
+}
+
+button.registerSubmitButton:hover {
+    background: var(--mono900);
 }

@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="linkContainer">
                     <Link to='/login'>เข้าสู่ระบบ</Link>
                     <Link to='/register'>สร้างบัญชี</Link>
-                    <Link to='/'>เกี่ยวกับเรา</Link>
+                    <Link to='/aboutus'>เกี่ยวกับเรา</Link>
                 </div>
                 <div className="copyright-container">©2023 Ryuzu Inc.</div>
             </div>

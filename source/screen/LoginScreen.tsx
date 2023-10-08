@@ -16,7 +16,7 @@ export default function LoginScreen() {
                     <div className='loginFormHeader'>เข้าสู่ระบบ 🎉</div>
                     <div className='loginFromDescription'>ป้อนอีเมลและรหัสผ่านของคุณ</div>
                     <div className='loginInputContainer'>
-                        <input type='text' placeholder='อีเมล' className='loginInputField' />
+                        <input type='email' placeholder='อีเมล' className='loginInputField' />
                     </div>
                     <div className='loginInputContainer'>
                         <input type='password' placeholder='รหัสผ่าน' className='loginInputField' />
