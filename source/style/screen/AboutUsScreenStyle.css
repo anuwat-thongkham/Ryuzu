@@ -1,0 +1,80 @@
+ div.aboutUsScreenContainer{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+ }
+ div.aboutUsContentContainer{
+
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+ }
+ p.aboutUsHeader {
+     width: calc(1312 * var(--unit));
+     height: calc(64 * var(--unit));
+     font: 600 calc(36 * var(--unit))'IBM Plex Sans Thai';
+     margin: calc(112 * var(--unit)) auto 0 auto;
+     display: flex;
+     align-items: center;
+     color: var(--mono800);
+ }
+
+
+ ul.aboutUsCard {
+     width: calc(1312 * var(--unit));
+     height: calc(304 * var(--unit));
+     list-style: none;
+     display: flex;
+     gap: calc(32 * var(--unit));
+     margin: calc(64 * var(--unit)) auto 0 auto;
+ }
+
+ ul.aboutUsCard li {
+     width: calc(528 * var(--unit));
+     height: calc(304 * var(--unit));
+     background: linear-gradient(var(--secondary), var(--primary));
+     cursor: pointer;
+     color: var(--mono100);
+ }
+
+ ul.aboutUsCard li:last-of-type {
+     background: linear-gradient(var(--accent), var(--accentVariant));
+ }
+
+ ul.aboutUsCard li:hover {
+     transition: 0.3s;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+ }
+
+ ul.aboutUsCard li div {
+     width: calc(192 * var(--unit));
+     height: calc(304 * var(--unit));
+     padding: calc(16 * var(--unit));
+     font: 600 calc(20 * var(--unit)) 'Inter';
+     background: var(--mono800);
+ }
+
+ p.aboutUsSub-header {
+     width: calc(1312 * var(--unit));
+     height: calc(64 * var(--unit));
+     display: flex;
+     align-items: center;
+     font: 600 calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+     margin: calc(64 * var(--unit)) auto 0 auto;
+     border-bottom: 1px solid var(--mono300);
+ }
+
+ p.aboutUsContent {
+     width: calc(1312 * var(--unit));
+     height: auto;
+     margin: calc(16 * var(--unit)) auto 0 auto;
+     font: 400 calc(16 * var(--unit)) 'IBM Plex Sans Thai';
+     color: var(--mono600);
+     text-indent: calc(16 * var(--unit));
+ }
+
+ p.aboutUsContent:last-of-type {
+     text-indent: 0;
+     margin-bottom: calc(112 * var(--unit));
+ }

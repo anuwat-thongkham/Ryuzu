@@ -33,7 +33,7 @@ return(
             <div className='suggestMenuTitle'>แนะนำทีมงาน</div>
             <div className='suggestMenuContent'>แนะนำทีมงานที่สร้างโปรเจ็คนี้ขึ้นมา และที่มา จุดประสงค์ และประโยชน์</div>
             <div className='suggestMenuDetail'>ดูรายละเอียด</div>
-            <Link to='/' className='suggestMenuButton suggestMenuButton-4 material-symbols-rounded'>arrow_forward</Link>
+            <Link to='/aboutus' className='suggestMenuButton suggestMenuButton-4 material-symbols-rounded'>arrow_forward</Link>
         </div>
     </div>
 )
