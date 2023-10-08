@@ -30,7 +30,7 @@ export default function LoginScreen() {
                 // Redirect to the authenticated user's dashboard or profile page
             } else {
                 // Handle login error, display a message to the user
-                setWarningMessage('Invalid email or password');
+                setWarningMessage('Invalid email or password. Please try again');
             }
         } catch (error) {
             console.error('Error logging in:', error);
