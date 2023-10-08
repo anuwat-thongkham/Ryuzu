@@ -24,7 +24,7 @@ export default function RegisterScreen() {
             // ในที่นี้ยังไม่ได้เขียนโค้ดไปยังหน้าอื่นๆ คุณต้องเพิ่มโค้ดนี้เอง
             setShowSuccess(true);
         } catch (error) {
-            console.error("เกิดข้อผิดพลาดในการลงทะเบียน: " + error.message);
+            console.error("เกิดข้อผิดพลาดในการลงทะเบียน: ");
             setWarningMessage("เกิดข้อผิดพลาดในการลงทะเบียน");
         }
     };

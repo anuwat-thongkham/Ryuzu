@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../component/Footer';
 import '../style/screen/LoginScreenStyle.css';
+import { Alert } from 'react-native';
 
 export default function LoginScreen() {
     const [email, setEmail] = useState('');
@@ -29,6 +30,8 @@ export default function LoginScreen() {
             if (response.ok) {
                 const data = await response.json();
                 console.log('Login Success:', data);
+                localStorage.setItem('token', data.id);
+                Alert.alert('ล็อกอินสำเร็จ');
                 // Handle successful login - you may want to store the user data or token
             } else {
                 const errorData = await response.json();
