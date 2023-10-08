@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react'; 
+import { useState } from 'react';
 
 import Footer from '../component/Footer';
 
@@ -16,10 +16,10 @@ export default function LoginScreen() {
                     <div className='loginFormHeader'>เข้าสู่ระบบ 🎉</div>
                     <div className='loginFromDescription'>ป้อนอีเมลและรหัสผ่านของคุณ</div>
                     <div className='loginInputContainer'>
-                        <input type='email' placeholder='อีเมล' className='loginInputField' />
+                        <input type='email' placeholder='อีเมล' className='loginInputField' required />
                     </div>
                     <div className='loginInputContainer'>
-                        <input type='password' placeholder='รหัสผ่าน' className='loginInputField' />
+                        <input type='password' placeholder='รหัสผ่าน' className='loginInputField' required />
                     </div>
                     <div className='loginWarningMessage'>{warningMessage}</div>
                     <div className='loginSubmitButtonContainer'>

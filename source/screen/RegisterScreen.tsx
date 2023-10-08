@@ -7,7 +7,7 @@ import '../style/screen/RegisterScreenStyle.css'
 export default function RegisterScreen() {
 
 
-    const [warningMessage, setWarningMessage] = useState<string>('Hi');
+    const [warningMessage, setWarningMessage] = useState<string>('');
     const handleSubmit = () => {
         setWarningMessage('Hi');
     }
@@ -23,16 +23,13 @@ export default function RegisterScreen() {
                         <div className="registerFormHeader">เริ่มต้นใช้งาน 👋</div>
                         <div className="registerFormDesription">สร้างบัญชีของคุณเพื่อเริ่มใช้งาน</div>
                         <div className="registerInputContainer">
-
-                            <input type='text' placeholder='ชื่อผู้ใช้' className='registerInputField' />
+                            <input type='text' placeholder='ชื่อผู้ใช้' className='registerInputField' required/>
                         </div>
                         <div className="registerInputContainer">
-
-                            <input type='email' placeholder='อีเมล' className='registerInputField' />
+                            <input type='email' placeholder='อีเมล' className='registerInputField' required/>
                         </div>
                         <div className="registerInputContainer">
-                            <input type='password' placeholder='รหัสผ่าน' className='registerInputField' /></div>
-
+                            <input type='password' placeholder='รหัสผ่าน' className='registerInputField' required/></div>
                         <div className='registerWarningMessage'>{warningMessage}</div>
                         <div className='registerSubmitButtonContainer'>
                             <button type='submit' className='registerSubmitButton' >เข้าสู่ระบบ</button>
