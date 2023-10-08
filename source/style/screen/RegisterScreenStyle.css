@@ -1,0 +1,41 @@
+div.registerContainer {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+div.registerContentContainer {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    background: transparent;
+}
+
+div.heroContainer {
+    width: 50vw;
+    height: 100vh;
+    background: linear-gradient(-180deg, var(--secondary) 0%, var(--primary) 50%);
+}
+
+div.formSection {
+    width: 50vw;
+    height: 100vh;
+}
+form.registerFormContainer{
+
+}
+div.registerFormLogo{
+
+}
+div.registerFormHeader{
+
+}
+div.registerFormDesription{
+
+}
+
+div.registerInputContainer{
+    
+}

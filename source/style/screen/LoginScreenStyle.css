@@ -3,7 +3,7 @@ div.loginScreenContainer {
     height: auto;
 }
 
-div.contentContainer {
+div.loginContentContainer {
     width: 100%;
     height: auto;
     min-height: 100vh;
@@ -40,13 +40,13 @@ div.loginFromDescription {
     color: var(--mono600);
 }
 
-div.inputContainer {
+div.loginInputContainer {
     width: calc(288 * var(--unit));
     height: calc(40 * var(--unit));
     margin: calc(16 * var(--unit)) 0 0 0;
 }
 
-div.warningMessage {
+div.loginWarningMessage {
     width: calc(288 * var(--unit));
     height: calc(16 * var(--unit));
     margin: calc(24 * var(--unit)) 0 0 0;
@@ -56,13 +56,13 @@ div.warningMessage {
     color: var(--alert);
 }
 
-div.submitButtonContainer {
+div.loginSubmitButtonContainer {
     width: calc(288 * var(--unit));
     height: calc(48 * var(--unit));
     margin: calc(16 * var(--unit)) 0 0 0;
 }
 
-div.suggestTextContainer {
+div.loginSuggestTextContainer {
     width: calc(288 * var(--unit));
     height: calc(16 * var(--unit));
     margin: calc(32 * var(--unit)) 0 0 0;
@@ -73,18 +73,18 @@ div.suggestTextContainer {
     color: var(--mono800);
 }
 
-div.suggestTextContainer a {
+div.loginSuggestTextContainer a {
     font: 600 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
     text-decoration: none;
     color: var(--accent);
 
 }
 
-div.suggestTextContainer a:hover {
+div.loginSuggestTextContainer a:hover {
     text-decoration: underline;
 }
 
-input.inputField {
+input.loginInputField {
     width: calc(288 * var(--unit));
     height: calc(40 * var(--unit));
     border-radius: calc(8 * var(--unit));
@@ -94,12 +94,12 @@ input.inputField {
     padding: 0 calc(16 * var(--unit));
 }
 
-input.inputField:hover,
-input.inputField:focus {
+input.loginInputField:hover,
+input.loginInputField:focus {
     outline: 3px solid var(--accentVariant);
 }
 
-button.submitButton {
+button.loginSubmitButton {
     width: calc(288 * var(--unit));
     height: calc(48 * var(--unit));
     border-radius: calc(16 * var(--unit));
@@ -110,7 +110,7 @@ button.submitButton {
     cursor: pointer;
 }
 
-button.submitButton:hover {
+button.loginSubmitButton:hover {
     background: var(--mono900);
 }
 
