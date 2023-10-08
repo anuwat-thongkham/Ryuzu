@@ -11,11 +11,12 @@ export default function RegisterScreen() {
     const handleSubmit = () => {
         setWarningMessage('Hi');
     }
+
     return (
         <div className="registerScreenContainer">
             <div className="registerContentContainer">
                 <div className="heroContainer">
-                    <Link to='/' className='buttonBack material-symbols-rounded'>arrow_back</Link>
+                    <Link to='/' className='buttonBack material-symbols-rounded material-symbols-rounded-not-fill'>arrow_back</Link>
                 </div>
                 <div className="formSection">
                     <form action="" className="registerFormContainer">
