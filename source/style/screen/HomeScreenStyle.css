@@ -1,3 +1,9 @@
+div.homeScreenContainer {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
 div.heroText {
     width: calc(1088 * var(--unit));
     height: calc(192 * var(--unit));
@@ -29,4 +35,3 @@ div.card-header {
     margin: calc(64 * var(--unit)) auto 0 auto;
     color: var(--mono800);
 }
-
