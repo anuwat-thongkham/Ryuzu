@@ -71,4 +71,14 @@ span.wishButtonIcon{
     font-size: calc(20 * var(--unit));
     color: var(--mono800);
 }
-div.productCardPrice {}
+div.productCardPrice {
+    width: calc(132 * var(--unit));
+    height: calc(24 * var(--unit));
+    position: absolute;
+    margin: calc(-24 * var(--unit)) 0 0 calc(53.33 * var(--unit));
+    font: 600 calc(14 * var(--unit)) 'Inter';
+    color: var(--mono800);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
