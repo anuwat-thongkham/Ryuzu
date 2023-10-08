@@ -1,49 +1,43 @@
+const mysql = require('mysql');
 const express = require('express');
-const jwt = require('jsonwebtoken');
-const router = express.Router();
-const pool = require('./Config/database'); // Update the path to your pool configuration
-const bcrypt = require('bcrypt'); // Import bcrypt
+const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser'); // Add this line
 
-// Handle POST request for user login
-router.post('/login', async (req, res) => {
-  console.log('Received login request');
-  const { email, password } = req.body;
-  console.log('Email:', email);
-  console.log('Password:', password);
+app.use(cors());
+app.use(bodyParser.json()); // Add this line
 
-  // Retrieve user data from the database
-  const query = 'SELECT * FROM Customer WHERE CustomerEmail = ?';
-  pool.query(query, [email], (err, results) => {
-    if (err) {
-      console.error('Error querying the database:', err);
-      return res.status(500).json({ message: 'Server error' });
+// Create a connection pool
+const db = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  password: 'root',
+  database: 'Ryuzu',
+});
+
+app.post('/login', (req, res) => {
+  const { email, password } = req.body; // Use req.body to access the request data
+
+  // Check if email and password are provided
+  if (!email || !password) {
+    return res.status(400).json({ message: 'Email and password are required' });
+  }
+
+  // Use a query to check if the email and password match in your database
+  db.query("SELECT * FROM Customer WHERE CustomerEmail = ? AND CustomerPassword = ?", [email, password], (error, results) => {
+    if (error) {
+      console.error('MySQL query error:', error);
+      return res.status(500).json({ message: 'Internal server error' });
     }
 
+    // Check if any results were returned from the database
     if (results.length === 0) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
 
-    const user = results[0];
-
-    // Compare the provided password with the hashed password from the database
-    bcrypt.compare(password, user.CustomerPassword, (compareErr, passwordMatch) => {
-      if (compareErr) {
-        console.error('Error comparing passwords:', compareErr);
-        return res.status(500).json({ message: 'Server error' });
-      }
-
-      if (!passwordMatch) {
-        return res.status(401).json({ message: 'Invalid email or password' });
-      }
-
-      // Generate a JWT token for the user
-      const token = jwt.sign({ userId: user.CustomerID }, 'your-secret-key', {
-        expiresIn: '1h', // Token expiration time
-      });
-
-      res.status(200).json({ message: 'Login successful', token });
-    });
+    // Authentication successful - you can generate a token here if needed
+    res.status(200).json({ message: 'Authentication successful', user: results[0] });
   });
 });
 
-module.exports = router;
+// ... Other routes and server setup

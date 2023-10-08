@@ -9,7 +9,8 @@ export default function LoginScreen() {
     const [warningMessage, setWarningMessage] = useState<string>('');
 
     const handleLogin = async (e: React.FormEvent) => {
-        e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault();
+    console.log('handleLogin function called');
 
         try {
             const response = await fetch('/login', {
@@ -23,14 +24,16 @@ export default function LoginScreen() {
                 }),
             });
 
+            console.log('Response:', response);
+
             if (response.ok) {
                 const data = await response.json();
-                const token = data.token;
-                // Store the token in local storage or a state variable
-                // Redirect to the authenticated user's dashboard or profile page
+                console.log('Login Success:', data);
+                // Handle successful login - you may want to store the user data or token
             } else {
-                // Handle login error, display a message to the user
-                setWarningMessage('Invalid email or password. Please try again');
+                const errorData = await response.json();
+                console.log('Login Error:', errorData);
+                setWarningMessage(errorData.message);
             }
         } catch (error) {
             console.error('Error logging in:', error);
