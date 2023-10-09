@@ -12,7 +12,7 @@ import Dashboard03 from './source/screen/dashboard03';
 import Dashboard04 from './source/screen/dashboard04';
 import Dashboard05 from './source/screen/dashboard05';
 
-import AddProductScreen from './source/screen/AddProductScreen';
+import AddProductScreen from './source/screen/AdProductScreen';
 function App() {
     return (
         <BrowserRouter>

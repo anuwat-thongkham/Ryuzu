@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+import '../style/screen/AdProductScreenStyle.css'
 
 const apiUrl = 'http://localhost:3000'; // Update with your server URL
 
@@ -14,6 +16,7 @@ interface FormData {
 }
 
 const AddProductScreen: React.FC = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState<FormData>({
         name: '',
         isWish: false,
@@ -61,15 +64,17 @@ const AddProductScreen: React.FC = () => {
                 },
             });
             console.log('Product inserted:', response.data);
+            navigate('/dashboard-01');
         } catch (error) {
             console.log('Error inserting product:', error);
         }
     };
     return (
-        <div>
-            <Link to='/dashboard-01'>กลับ</Link>
+        <div className="container">
+            <Link to='/dashboard-01' className="back-link">กลับ</Link>
             <h2>Insert Product</h2>
-            <form onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
+
                 <div>
                     <label>Name:</label>
                     <input
@@ -123,6 +128,7 @@ const AddProductScreen: React.FC = () => {
                     <label>Image:</label>
                     <input type="file" name="image" accept="image/*" onChange={handleFileChange} />
                 </div>
+                <button type="submit">Insert</button>
                 <button type="submit">Insert</button>
             </form>
         </div>

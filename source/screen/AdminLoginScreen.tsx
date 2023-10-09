@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Link ,useNavigate} from 'react-router-dom';
 import Footer from '../component/Footer';
 import '../style/screen/AdminLoginScreenStyle.css';
+
 const apiUrl = "http://localhost:3000";
 
 export default function AdminLoginScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
     const [warningMessage, setWarningMessage] = useState<string>('');
     const navigate = useNavigate();
     const handleLogin = async (e: React.FormEvent) => {
@@ -20,8 +22,8 @@ export default function AdminLoginScreen() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    admin_email: email,
-                    admin_password: password,
+                    email: email,
+                    password: password,
                 }),
             });
 
