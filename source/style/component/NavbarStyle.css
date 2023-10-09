@@ -40,6 +40,7 @@ button.navbarUser {
     text-overflow: ellipsis; 
     overflow: hidden; 
     white-space: nowrap;
+    padding: 0 calc(16 * var(--unit));
 }
 
 button.navbarSearch {
