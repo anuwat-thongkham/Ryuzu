@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 import Footer from '../component/Footer';
 import '../style/screen/LoginScreenStyle.css';
 const apiUrl = "http://localhost:3000";
@@ -7,7 +7,7 @@ export default function LoginScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [warningMessage, setWarningMessage] = useState<string>('');
-
+    const navigate = useNavigate();
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         console.log('handleLogin function called');
@@ -32,6 +32,7 @@ export default function LoginScreen() {
                 alert('เข้าสู่ระบบสำเร็จ');
                 localStorage.setItem('token', data.token);
             
+                navigate('/');
                 // Handle successful login - you may want to store the user data or token
             } else {
                 const errorData = await response.json();

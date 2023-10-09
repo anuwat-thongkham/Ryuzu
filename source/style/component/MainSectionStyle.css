@@ -1,0 +1,42 @@
+div.main-section {
+    width: 60vw;
+    height: auto;
+    min-height: 100vh;
+    padding: calc(32 * var(--unit)) auto;
+}
+
+div.main-content {
+    width: calc(832 * var(--unit));
+    height: 90vh;
+    background: #FFFFFF;
+    border-radius: calc(48 * var(--unit));
+    margin: calc(32 * var(--unit)) auto;
+    padding: calc(32 * var(--unit));
+}
+
+p.main-header {
+    width: calc(768 * var(--unit));
+    height: calc(32 * var(--unit));
+    display: flex;
+    align-items: center;
+    font: 600 calc(32 * var(--unit)) 'Inter';
+    /* Standard syntax (modern browsers) */
+    background: linear-gradient(#FFB05C, #FF5C5C);
+    background-clip: text;
+    color: transparent;
+
+    /* Safari and Chrome (WebKit) */
+    background: -webkit-linear-gradient(#FFB05C, #FF5C5C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Firefox */
+    background: -moz-linear-gradient(#FFB05C, #FF5C5C);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    /* Opera */
+    background: -o-linear-gradient(#FFB05C, #FF5C5C);
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+}

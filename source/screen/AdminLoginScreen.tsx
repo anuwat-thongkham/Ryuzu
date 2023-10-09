@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 import Footer from '../component/Footer';
 import '../style/screen/AdminLoginScreenStyle.css';
 const apiUrl = "http://localhost:3000";
@@ -8,20 +8,20 @@ export default function AdminLoginScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [warningMessage, setWarningMessage] = useState<string>('');
-
+    const navigate = useNavigate();
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         console.log('handleLogin function called');
 
         try {
-            const response = await fetch(`${apiUrl}/login`, {
+            const response = await fetch(`${apiUrl}/adminlogin`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    email: email,
-                    password: password,
+                    admin_email: email,
+                    admin_password: password,
                 }),
             });
 
@@ -31,7 +31,7 @@ export default function AdminLoginScreen() {
                 const data = await response.json();
                 console.log('Login Success:', data);
                 alert('เข้าสู่ระบบสำเร็จ');
-                localStorage.setItem('token', data.token);
+                navigate('/dashboard-01');
             
                 // Handle successful login - you may want to store the user data or token
             } else {

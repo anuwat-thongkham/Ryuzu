@@ -1,0 +1,7 @@
+.cover-dashboard {
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    background: #FAFAFA;
+}

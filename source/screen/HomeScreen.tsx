@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+
+import { useNavigate,} from 'react-router-dom';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import '../style/global/global.css';
 import '../style/screen/HomeScreenStyle.css';
@@ -24,10 +26,11 @@ interface UserData {
 }
 
 export default function Home() {
+    const navigate = useNavigate();
     const [thisToken, setThisToken] = useState<string>('');
     const [products, setProducts] = useState<Product[]>([]);
     const [userData, setUserData] = useState<UserData | null>(null);
-    const [userName, setUserName] = useState<string>('');
+    const [userName, setUserName] = useState<string>('ไม่ได้เข้าสู่ระบบ');
 
     useEffect(() => {
         const fetchData = async () => {
@@ -71,15 +74,13 @@ export default function Home() {
 
     }, [thisToken]); // Include thisToken in the dependency array
 
-    const handleLogOut = ()=>{
-        alert('666');
-        // if(thisToken != ''){
-        //     localStorage.setItem('token', '');
-        //     alert('ออกจากระบบสำเร็จ');
-        // }else{
-        //     alert('ยังไม่ได้เข้าสู่ระบบ');
-        // }
-    }
+    const handleLogOut = () => {
+        alert('ออกจากระบบแล้ว');
+        localStorage.removeItem('token'); // Use removeItem to delete the token
+        setUserName('ไม่ได้เข้าสู่ระบบ');
+        // navigate('/');
+
+      };
     return (
         <div className='homeScreenContainer'>
             <Navbar userName={userName} onClick={handleLogOut}></Navbar>

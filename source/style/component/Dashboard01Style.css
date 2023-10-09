@@ -1,0 +1,78 @@
+ul.analysis-container {
+    width: calc(672 * var(--unit));
+    height: calc(192 * var(--unit));
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.analysis-box {
+    width: calc(192 * var(--unit));
+    height: calc(192 * var(--unit));
+    background: #FFFFFF;
+    border-radius: calc(24 * var(--unit));
+    padding: calc(16 * var(--unit));
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dashed #5C8DFF;
+    color: #5C8DFF;
+}
+
+li.analysis-box:first-of-type {
+    border-color: #FF5C5C;
+    color: #FF5C5C;
+}
+
+li.analysis-box:last-of-type {
+    border-color: #000000;
+    color: #000000;
+}
+
+li.analysis-box p {
+    width: 100%;
+    height: calc(32 * var(--unit));
+    display: grid;
+    place-content: center;
+    font: 600 calc(20 * var(--unit)) 'Inter';
+    margin: calc(40 * var(--unit)) 0 0 0;
+}
+
+li.analysis-box p:first-of-type {
+    width: calc(142 * var(--unit));
+    height: calc(16 * var(--unit));
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font: 500 calc(16 * var(--unit)) 'IBM Plex Sans Thai';
+    margin: 0;
+}
+
+li.analysis-box p:last-of-type {
+    width: 100%;
+    height: calc(16 * var(--unit));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 calc(10 * var(--unit)) 'IBM Plex Sans Thai';
+    margin: calc(32 * var(--unit)) 0 0 0;
+}
+
+li.analysis-box:hover {
+    border: 0;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+div.direct-symbols {
+    width: calc(16 * var(--unit));
+    height: calc(16 * var(--unit));
+    font-size: calc(16 * var(--unit));
+    display: grid;
+    place-content: center;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24;
+}

@@ -1,0 +1,56 @@
+div.right_bar-section {
+    width: 27.778vw;
+    height: auto;
+    min-height: 100vh;
+    padding: calc(32 * var(--unit)) 0;
+}
+
+div.right_bar-content {
+    width: calc(352 * var(--unit));
+    height: auto;
+    background: #FFFFFF;
+    border-radius: calc(48 * var(--unit));
+    position: fixed;
+    top: calc(32 * var(--unit));
+    bottom: calc(32 * var(--unit));
+    right: calc(32 * var(--unit));
+}
+
+div.img {
+    width: calc(288 * var(--unit));
+    height: calc(192 * var(--unit));
+    background: url('../../asset/image/background-01.jpg') no-repeat center;
+    background-size: cover;
+    margin: calc(32 * var(--unit)) calc(32 * var(--unit)) 0 calc(32 * var(--unit));
+    border-radius: calc(16 * var(--unit));
+}
+
+div.img:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+div.right_bar-logo {
+    width: calc(96 * var(--unit));
+    height: calc(26 * var(--unit));
+    background: url('../../asset/image/logo-black.png') no-repeat center;
+    background-size: contain;
+    margin: calc(32 * var(--unit)) 0 0 calc(32 * var(--unit));
+}
+
+p.right_bar-header {
+    width: calc(288 * var(--unit));
+    height: calc(32 * var(--unit));
+    display: flex;
+    align-items: center;
+    font: 500 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    margin: calc(32 * var(--unit)) 0 0 calc(32 * var(--unit));
+}
+
+p.right_bar-number {
+    width: calc(288 * var(--unit));
+    height: calc(32 * var(--unit));
+    display: flex;
+    align-items: center;
+    font: 600 calc(24 * var(--unit)) 'Inter';
+    margin: calc(16 * var(--unit)) 0 0 calc(32 * var(--unit));
+}
