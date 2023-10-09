@@ -1,0 +1,127 @@
+div.loginAdminScreenContainer {
+    width: 100%;
+    height: auto;
+}
+
+div.loginAdminContentContainer {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(231deg, var(--accentVariant) 27.7%, var(--accent) 72.3%);
+    display: grid;
+    place-content: center;
+}
+
+form.loginAdminFormContainer {
+    width: calc(352 * var(--unit));
+    height: calc(368 * var(--unit));
+    background: var(--mono100);
+    padding: 0 calc(32 * var(--unit));
+}
+
+div.loginAdminFormHeader {
+    width: calc(288 * var(--unit));
+    height: calc(32 * var(--unit));
+    margin: calc(40 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 700 calc(24 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+}
+
+div.loginAdminFromDescription {
+    width: calc(288 * var(--unit));
+    height: calc(32 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono600);
+}
+
+div.loginAdminInputContainer {
+    width: calc(288 * var(--unit));
+    height: calc(40 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+}
+
+div.loginAdminWarningMessage {
+    width: calc(288 * var(--unit));
+    height: calc(16 * var(--unit));
+    margin: calc(24 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--alert);
+}
+
+div.loginAdminSubmitButtonContainer {
+    width: calc(288 * var(--unit));
+    height: calc(48 * var(--unit));
+    margin: calc(16 * var(--unit)) 0 0 0;
+}
+
+div.loginAdminSuggestTextContainer {
+    width: calc(288 * var(--unit));
+    height: calc(16 * var(--unit));
+    margin: calc(32 * var(--unit)) 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono800);
+}
+
+div.loginAdminSuggestTextContainer a {
+    font: 600 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    text-decoration: none;
+    color: var(--accent);
+
+}
+
+div.loginAdminSuggestTextContainer a:hover {
+    text-decoration: underline;
+}
+
+input.loginAdminInputField {
+    width: calc(288 * var(--unit));
+    height: calc(40 * var(--unit));
+    border-radius: calc(8 * var(--unit));
+    border: 0;
+    background: var(--mono200);
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    padding: 0 calc(16 * var(--unit));
+}
+
+input.loginAdminInputField:hover,
+input.loginAdminInputField:focus {
+    outline: 3px solid var(--accentVariant);
+}
+
+button.loginAdminSubmitButton {
+    width: calc(288 * var(--unit));
+    height: calc(48 * var(--unit));
+    border-radius: calc(16 * var(--unit));
+    border: 0;
+    background: var(--mono800);
+    font: 400 calc(12 * var(--unit)) 'IBM Plex Sans Thai';
+    color: var(--mono100);
+    cursor: pointer;
+}
+
+button.loginAdminSubmitButton:hover {
+    background: var(--mono900);
+}
+
+a.buttonBack {
+    width: calc(32 * var(--unit));
+    height: calc(32 * var(--unit));
+    position: absolute;
+    margin: calc(32 * var(--unit)) 0 0 calc(32 * var(--unit));
+    background: transparent;
+    border: 0;
+    font-size: calc(32 * var(--unit));
+    color: var(--mono100);
+    outline: 0;
+    text-decoration: none;
+}

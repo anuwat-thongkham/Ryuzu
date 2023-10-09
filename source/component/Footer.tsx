@@ -14,6 +14,7 @@ export default function Footer() {
                     <Link to='/login'>เข้าสู่ระบบ</Link>
                     <Link to='/register'>สร้างบัญชี</Link>
                     <Link to='/aboutus'>เกี่ยวกับเรา</Link>
+                    <Link to='/loginadmin'>เข้าสู่ระบบ Admin</Link>
                 </div>
                 <div className="copyright-container">©2023 Ryuzu Inc.</div>
             </div>
